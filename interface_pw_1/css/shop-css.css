@@ -1,0 +1,24 @@
+form {
+    width: 280px;
+    background-color: #D03CC6;
+    padding: 15px;
+    border-radius: 5px;
+    color: black;
+    max-height: 400px;
+}
+
+form label {
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 0;
+    vertical-align: middle;
+    position: relative;
+}
+
+#bestelInfo {
+    padding-left: 20px;
+}

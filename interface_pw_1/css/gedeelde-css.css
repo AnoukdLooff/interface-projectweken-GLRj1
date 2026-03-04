@@ -1,0 +1,73 @@
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 200 to 1000 */
+
+.nunito-sans-standard {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.nunito-sans-bold {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+ul {
+  background-color: #f4f4f4;
+  /* ik heb als background color #f4f4f4 gebruikt omdat mijn logo geen transparante achtergrond heeft. door deze kleur te gebruiken ipv wit lijkt het alsof het wel transparant is, dat vind ik toch wel mooier */
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding-right: 30px;
+}
+
+button {
+  background-color: #00A3DA;
+  height: 100px;
+  width: 110px;
+  font-size: large;
+  border: none;
+}
+
+button:hover{
+  background-color: #20bcf0;
+}
+
+section {
+  height: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+#groepsfoto {
+  height: 400px;
+}
+
+#album {
+  height: 400px;
+}

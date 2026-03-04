@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/gedeelde-css.css">
+    <link rel="stylesheet" href="css/contact-css.css">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html"><img src="media/images/logo_LICKS&BRAINS_v2.svg" height="95px" alt="logo van het nieuwe album boom orange"></a></li>
+        <li><a href="tourdates.html"><button class="nunito-sans-bold">Tourdates</button></a></li>
+        <li><a href="shop.html"><button class="nunito-sans-bold">Shop</button></a></li>
+        <li><a href="contact.html"><button class="nunito-sans-bold">Contact</button></a></li>
+    </ul>
+
+    <section>
+        <div class="contactinfo">
+            <h1 class="nunito-sans-bold" id="title">Contact</h1>
+            <pre class="nunito-sans-standard">
+Email: licksnbrains@gmail.com
+Telefoonnummer: +31 612345678
+            </pre>
+        </div>
+        <img id="albumcover" src="media/images/LICKS&BRAINS_albumcover.png" alt="de album cover van boom orange">
+    </section>
+
+    <section>
+        <form action="https://sd-lab.nl/INTERFACE1/index.php" target="_blank">
+            <h2 class="nunito-sans-bold">Neem contact met ons op</h2>
+            <label class="nunito-sans-standard" for="voornaam">Voornaam: </label><input type="text" id="voornaam" name="voornaam" pattern="[^0-9]*" required>
+            <label class="nunito-sans-standard" for="achternaam">Achternaam: </label><input type="text" id="achternaam" name="achternaam" pattern="[^0-9]*" required>
+            <label class="nunito-sans-standard" for="email">Email: </label><input type="email" id="email" name="email" placeholder="voorbeeld@email.com" required>
+            <label class="nunito-sans-standard" for="telefoonnummer">Telefoonnummer: </label><input type="tel" id="telefoonnummer" name="telefoonnummer" pattern="[0]{1}[6]{1}-[0-9]{8}" placeholder="06-12345678">
+            <label class="nunito-sans-standard" for="vraag">Stel uw vraag: </label><textarea id="vraag" name="vraag" rows="4" cols="30" required></textarea>
+            <input class="nunito-sans-standard" id="verstuurknop" type="submit" value="Verstuur">
+        </form>
+    </section>
+</body>
+</html>

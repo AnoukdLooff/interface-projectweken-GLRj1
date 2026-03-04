@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/gedeelde-css.css">
+    <link rel="stylesheet" href="css/shop-css.css">
+    <script src="javascript/shop-js.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html"><img src="media/images/logo_LICKS&BRAINS_v2.svg" height="95px" alt="logo van het nieuwe album boom orange"></a></li>
+        <li><a href="tourdates.html"><button class="nunito-sans-bold">Tourdates</button></a></li>
+        <li><a href="shop.html"><button class="nunito-sans-bold">Shop</button></a></li>
+        <li><a href="contact.html"><button class="nunito-sans-bold">Contact</button></a></li>
+    </ul>
+
+    <section>
+        <form>
+            <label class="nunito-sans-standard" for="voornaam">Voornaam: </label><input type="text" id="voornaam" name="voornaam" pattern="[^0-9]*" required>
+            <br>
+            <label class="nunito-sans-standard" for="achternaam">Achternaam: </label><input type="text" id="achternaam" name="achternaam" pattern="[^0-9]*" required>
+            <br>
+            <label class="nunito-sans-standard" for="postcode">Postcode: </label><input type="text" id="postcode" name="postcode" pattern="[0-9]{4}[A-Z]{2}" placeholder="1234AB" required>
+            <br>
+            <label class="nunito-sans-standard" for="huisnummer">Huisnummer: </label><input type="text" id="huisnummer" name="huisnummer" pattern="[0-9]*" required>
+            <br>
+            <label class="nunito-sans-standard" for="email">Email: </label><input type="email" id="email" name="email" placeholder="voorbeeld@email.com" required>
+            <br>
+            <label class="nunito-sans-standard" for="telefoonnummer">Telefoonnummer: </label><input type="tel" id="telefoonnummer" name="telefoonnummer" pattern="[0]{1}[6]{1}-[0-9]{8}" placeholder="06-12345678">
+            
+        </form>
+        <form>
+            <div>
+                <img id="shop-image" src="media/images/tourdates/DSC_4770-1024x682.jpg" width="200px">
+                <input type="checkbox" id="ticket" name="ticket">
+                <label class="nunito-sans-standard" for="ticket">Tickets</label>
+            </div>
+            <div>
+                <img id="shop-image" src="media/images/LICKS&BRAINS_albumcover.png" width="200px">
+                <input type="checkbox" id="album" name="album">
+                <label class="nunito-sans-standard" for="album">Album</label>
+            </div>
+        </form>
+            <button onclick="bestellen()">bestel</button>
+    </section>
+
+    <section>
+        <div id="gegevens" class="nunito-sans-standard"></div>
+        <div id="bestelInfo" class="nunito-sans-standard"></div>
+        <a href="bevestiging.html"><button id="bevestig" disabled="true">Bevestig</button></a>
+    </section>
+</body>
+</html>
